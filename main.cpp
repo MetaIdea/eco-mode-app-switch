@@ -105,7 +105,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) {
 	niData.hIcon = (HICON)LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON),IMAGE_ICON, GetSystemMetrics(SM_CXSMICON), GetSystemMetrics(SM_CYSMICON),LR_DEFAULTCOLOR);
 	niData.hWnd = hWnd;
 	niData.uCallbackMessage = SWM_TRAYMSG;
-	lstrcpyn(niData.szTip, _T("Eco Mode App Switch - Suspend/Freeze Apps"), sizeof(niData.szTip) / sizeof(TCHAR));
+	lstrcpyn(niData.szTip, _T("Eco Mode App Switch V0.8 - Suspend/Freeze Apps"), sizeof(niData.szTip) / sizeof(TCHAR));
 	Shell_NotifyIcon(NIM_ADD, &niData);
 
 	if (niData.hIcon && DestroyIcon(niData.hIcon)) {
